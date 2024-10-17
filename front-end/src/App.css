@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.cheese-card {
+    background-color: #f5f5f5;
+    border: 2px solid #7a7a7a;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card-selected {
+    border: 2px solid #dd5100;
+}
+
+.cheese-card:hover {
+    transform: scale(1.05);
+    border: 2px solid #dd5100;
+    cursor: pointer;
+}
+
+.cheese-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #dd5100;
+}
+
+h2 {
+    margin: 10px 0;
+}
