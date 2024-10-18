@@ -17,6 +17,12 @@ Build and run both front-end and back-end with Docker
 docker-compose up --build
 ```
 
+To stop the Docker container
+
+```
+docker-compose down
+```
+
 Front-end address
 
 ```
