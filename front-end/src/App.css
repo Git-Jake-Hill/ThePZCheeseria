@@ -10,8 +10,6 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
-    margin-left: 15vw;
-    margin-right: 15vw;
 }
 
 .cheese-card {
@@ -40,6 +38,17 @@
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.calculator {
+    background-color: #f5f5f5;
+    border: 2px solid #7a7a7a;
+    border-radius: 10px;
+    width: 250px;
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
