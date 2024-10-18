@@ -11,7 +11,7 @@ As an MVP of our cheeseria, we are looking to display our cheese selection that 
 
 ## Getting Started
 
-Build and run both front-end and back-end with Docker
+Build and run both front-end and back-end with Docker (setup with a Docker compose file to build bot containers with one command)
 
 ```
 docker-compose up --build
@@ -84,6 +84,7 @@ http://localhost:5000/api-docs
 -   Front-end build out pages, nav-bar etc.
 -   Add additional Unit Tests to be more exhaustive.
 -   Upgrade SQLite to a cloud database for persistent storage between sessions/users.
+-   Update Docker to run React production build.
 
 ## Author
 
