@@ -26,10 +26,10 @@ describe("Cheese API", () => {
 
         const response = await request(app).get("/api/cheese");
 
-        expect(response.statusCode).toBe(200); // Check for 200 OK
-        expect(Array.isArray(response.body)).toBe(true); // Check if the response is an array
-        expect(response.body.length).toBe(2); // Expect 2 items in the response
-        expect(response.body[0].type).toBe("Cheddar"); // Check the first item's type
+        expect(response.statusCode).toBe(200);
+        expect(Array.isArray(response.body)).toBe(true);
+        expect(response.body.length).toBe(2);
+        expect(response.body[0].type).toBe("Cheddar");
     });
 
     // Test POST a new cheese
@@ -46,9 +46,9 @@ describe("Cheese API", () => {
 
         const response = await request(app).post("/api/cheese").send(newCheese);
 
-        expect(response.statusCode).toBe(200); // Check if status is 200 OK
-        expect(response.body).toHaveProperty("id", 1); // Check if response has the new ID
-        expect(response.body.type).toBe("Gouda"); // Check if type matches
+        expect(response.statusCode).toBe(200);
+        expect(response.body).toHaveProperty("id", 1);
+        expect(response.body.type).toBe("Gouda");
     });
 
     app.closeServer();

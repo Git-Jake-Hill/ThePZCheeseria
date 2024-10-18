@@ -67,7 +67,7 @@ module.exports = (express, app) => {
      *             schema:
      *               $ref: '#/components/schemas/Cheese'
      *       500:
-     *         description: Some server error
+     *         description: Server error
      */
     router.post("/", controller.create);
 
@@ -86,6 +86,8 @@ module.exports = (express, app) => {
      *               type: array
      *               items:
      *                 $ref: '#/components/schemas/Cheese'
+     *       500:
+     *         description: Server error
      */
     router.get("/", controller.all);
 
@@ -116,9 +118,9 @@ module.exports = (express, app) => {
      *             schema:
      *               $ref: '#/components/schemas/Cheese'
      *       404:
-     *         description: The cheese was not found
+     *         description: Cheese not found
      *       500:
-     *         description: Some error happened
+     *         description: Server error
      */
     router.put("/:id", controller.update);
 
@@ -139,9 +141,9 @@ module.exports = (express, app) => {
      *       200:
      *         description: The cheese was deleted
      *       404:
-     *         description: The cheese was not found
+     *         description: Cheese not found
      *       500:
-     *         description: Some error happened
+     *         description: Server error
      */
     router.delete("/:id", controller.delete);
 };
